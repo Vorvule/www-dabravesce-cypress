@@ -1,12 +1,10 @@
 /// <reference types='cypress' />
 
-describe('dabravesce.by title page main elements testing', () => {
+context('dabravesce.by base page main content', () => {
 
-    it('should check home page up', () => {
+    specify('Home page main content', () => {
 
         cy.visit('https://dabravesce.by')
-        cy.viewport(1600, 900)
-
         cy.title().should('eq', 'Дабравесце – Мф. 1')
 
         cy.get('#MenuView p').should('have.text', 'ДАБРАВЕСЦЕ')
