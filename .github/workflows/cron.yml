@@ -1,9 +1,9 @@
 name: Cypress Tests
 
-# on: [push]
-on:
-  schedule:
-  - cron: '15 20 * * *'
+on: [push]
+# on:
+ # schedule:
+ # - cron: '15 20 * * *'
 
 jobs:
   cypress-run:
